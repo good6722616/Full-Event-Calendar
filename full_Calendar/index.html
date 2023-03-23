@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.css" integrity="sha512-liDnOrsa/NzR+4VyWQ3fBzsDBzal338A1VfUpQvAcdt+eL88ePCOd3n9VQpdA0Yxi4yglmLy/AmH+Lrzmn0eMQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.css" integrity="sha512-nE9n2RmerwZclI8x8Q6GRuXmwtPib1KinxUfXXP9Rcz3Pu3Os+cDFiq+J6rEC1HdrgzHwo+rIvsw4YXKrGJulg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="#">
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    /> -->
+
+    </style>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tooltip.js/1.3.2/tooltip.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tooltip.js/1.3.2/tooltip.min.js"></script>
+    <script type="module">import fullcalendarcore from 'https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.1.4/+esm'</script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.0.0/index.global.js" integrity="sha512-YUuWHV7Rj/vfIUAnacb+QMr2GClIoyWaiu+bC4arnVcLsgB33qwR6GShxVtmFE1tRaoUls2iwC66nEKhXDsGOQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.js" integrity="sha512-CABi9vrtlQz9otMo5nT0B3nCBmn5BirYvO3oCnulsEzRDekxdMEZ2rXg85Is5pdnc9HNAcUEjm/7HagpqAFa1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </head>
+  <body>
+    <div id="search_bar">
+      <div id="search-form" class="pl-2 flex flex-nowrap relative">
+        <div class="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none">
+          <svg aria-hidden="true" class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+        </div>
+        <input type="search" placeholder="Search for Events" id="search-input" class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500">
+        <button id="search_button" type="submit" class="mr-2 ml-2 text-white right-2.5 bottom-2.5 bg-green-500 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2">Search Event</button>
+        <div class="allEvents_button"><button id="allEvents_button" class=" text-white bg-green-500 hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2">All Events</button></div>
+      </div>
+      
+      <div id="filter_button" id="filter_button" class="mb-4 flex items-center justify-center">
+        <div>
+          <button id="recruiting_seminar" class="bg-slate-50 hover:text-emerald-500 text-black py-2 px-4 rounded">Recruiting Seminar</button>
+          <button id="online_client_seminar" class="bg-blue-500 hover:bg-blue-700 text-black font-bold py-2 px-4 rounded">online client seminar</button>
+          <button id="agent_only_seminar" class="bg-blue-500 hover:bg-blue-700 text-black font-bold py-2 px-4 rounded">agent only seminar</button>
+          <button id="live_client_seminar"class="bg-blue-500 hover:bg-blue-700 text-black font-bold py-2 px-4 rounded" >live client seminar</button>
+
+        </div>
+      </div>
+    </div>
+    
+    <div id="calendar"></div>
+  </body>
+  <script src="script.js"></script>
+</html>
